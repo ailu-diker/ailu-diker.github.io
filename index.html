@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>San Zhang (张三)</title>
+<meta name="description" content="San Zhang (张三) — undergraduate student at XX University, interested in natural language processing and machine learning." />
+<style>
+  :root {
+    --fg: #1f2328;
+    --muted: #59636e;
+    --bg: #ffffff;
+    --line: #d8dee4;
+    --accent: #0969da;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg: #e6edf3; --muted: #9198a1; --bg: #0d1117; --line: #30363d; --accent: #4493f8; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  }
+  main { max-width: 680px; margin: 0 auto; padding: 64px 24px 48px; }
+  h1 { font-size: 30px; margin: 0 0 6px; letter-spacing: .2px; }
+  h1 .cn { color: var(--muted); font-weight: 500; font-size: 22px; margin-left: 8px; }
+  .role { margin: 0; font-size: 17px; }
+  .affil { margin: 2px 0 0; color: var(--muted); }
+  h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: var(--muted);
+    margin: 36px 0 10px;
+  }
+  p { margin: 0 0 10px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  ul { margin: 0; padding-left: 20px; }
+  li { margin: 4px 0; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 40px 0 16px; }
+  footer { color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+  <!-- ↓ 把 San Zhang / 张三 换成你的姓名（英文名建议与论文署名一致） -->
+  <h1>San Zhang<span class="cn">张三</span></h1>
+  <p class="role">Undergraduate Student</p>
+  <p class="affil">School of Computer Science, XX University</p>
+
+  <h2>About</h2>
+  <p>I am an undergraduate student at XX University. My research interests include natural language processing and machine learning.</p>
+
+  <h2>Contact</h2>
+  <!-- ↓ 必须写明邮箱：OpenReview 的"至少一条显示姓名和邮箱的链接"就靠这一行 -->
+  <p>Email: <a href="mailto:zhangsan@example.com">zhangsan@example.com</a></p>
+
+  <h2>Links</h2>
+  <ul>
+    <li><a href="https://github.com/ailu-diker">GitHub</a></li>
+    <!-- ↓ 注册 ORCID 后替换；没有就删掉这一行 -->
+    <li><a href="https://orcid.org/0000-0000-0000-0000">ORCID</a></li>
+  </ul>
+
+  <hr />
+  <footer>Last updated: November 2026</footer>
+</main>
+</body>
+</html>
